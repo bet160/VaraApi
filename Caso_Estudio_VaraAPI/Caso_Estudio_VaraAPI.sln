@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caso_Estudio_VaraAPI", "Caso_Estudio_VaraAPI.csproj", "{2E539552-5A5A-408D-9E6F-469F7774883C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E539552-5A5A-408D-9E6F-469F7774883C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E539552-5A5A-408D-9E6F-469F7774883C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E539552-5A5A-408D-9E6F-469F7774883C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E539552-5A5A-408D-9E6F-469F7774883C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {514489DE-3509-46EB-900C-6AC38562BFE7}
+	EndGlobalSection
+EndGlobal

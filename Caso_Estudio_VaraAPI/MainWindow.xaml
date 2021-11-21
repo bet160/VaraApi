@@ -1,0 +1,67 @@
+﻿<Window x:Class="Caso_Estudio_VaraAPI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Caso_Estudio_VaraAPI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Nombre del informante&#xD;&#xA;" HorizontalAlignment="Left" Margin="36,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefono del informante&#xD;&#xA;" HorizontalAlignment="Left" Margin="206,15,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Dirección del informante&#xA;" HorizontalAlignment="Left" Margin="428,15,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Orden Animal&#xA;" HorizontalAlignment="Left" Margin="36,72,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Condición del animal&#xA;" HorizontalAlignment="Left" Margin="206,72,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Número de animales&#xA;" HorizontalAlignment="Left" Margin="375,72,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Observaciones&#xA;" HorizontalAlignment="Left" Margin="611,72,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Sustrato&#xA;" HorizontalAlignment="Left" Margin="243,153,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Primera vez visto en&#xA;" HorizontalAlignment="Left" Margin="370,153,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Fecha del avistamiento&#xA;" HorizontalAlignment="Left" Margin="581,153,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="País&#xA;" HorizontalAlignment="Left" Margin="72,228,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Estado" HorizontalAlignment="Left" Margin="234,228,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Ciudad" HorizontalAlignment="Left" Margin="397,228,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Localidad" HorizontalAlignment="Left" Margin="512,228,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Latitud" HorizontalAlignment="Left" Margin="65,316,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Longitud" HorizontalAlignment="Left" Margin="234,316,0,0" VerticalAlignment="Top" Height="36"/>
+        <Label Content="Información adicional ubicación" HorizontalAlignment="Left" Margin="370,316,0,0" VerticalAlignment="Top" Height="36"/>
+        <CheckBox x:Name="chbAcceso" Content="Facil acceso" HorizontalAlignment="Left" Margin="36,166,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chAcantilado" Content="Acantilado" HorizontalAlignment="Left" Margin="36,189,0,0" VerticalAlignment="Top"/>
+        <Button Content="Registrar" HorizontalAlignment="Left" Margin="644,324,0,0" VerticalAlignment="Top" Width="121" Height="46" Click="Button_Click"/>
+        <TextBox x:Name="tbNombreInformante" HorizontalAlignment="Left" Height="23" Margin="36,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbTelefono" HorizontalAlignment="Left" Height="23" Margin="222,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbDireccion" HorizontalAlignment="Left" Height="23" Margin="370,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+        <ComboBox Name="cbOrden" HorizontalAlignment="Left" Height="22" Margin="33,108,0,0" VerticalAlignment="Top" Width="104">
+            <ComboBoxItem IsSelected="True">ODONTOCETO</ComboBoxItem>
+            <ComboBoxItem>MISTICETO</ComboBoxItem>
+            <ComboBoxItem>PINNIPEDO</ComboBoxItem>
+            <ComboBoxItem>SIRENO</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Name="cbCondicion" HorizontalAlignment="Left" Height="22" Margin="220,108,0,0" VerticalAlignment="Top" Width="104">
+            <ComboBoxItem IsSelected="True">VIVO</ComboBoxItem>
+            <ComboBoxItem>MUERTO</ComboBoxItem>
+            <ComboBoxItem>DESCONOCIDO</ComboBoxItem>
+            <ComboBoxItem>VIVOS/MUERTOS</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="tbNumeroAnimales" HorizontalAlignment="Left" Height="23" Margin="375,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbObservaciones" HorizontalAlignment="Left" Height="23" Margin="512,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
+        <ComboBox Name="cbSustrato" HorizontalAlignment="Left" Height="22" Margin="220,189,0,0" VerticalAlignment="Top" Width="104">
+            <ComboBoxItem IsSelected="True">ARENA</ComboBoxItem>
+            <ComboBoxItem>GRAVA</ComboBoxItem>
+            <ComboBoxItem>ROCOSO</ComboBoxItem>
+            <ComboBoxItem>OTRO</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Name="cbVistoen" HorizontalAlignment="Left" Height="22" Margin="375,189,0,0" VerticalAlignment="Top" Width="104">
+            <ComboBoxItem IsSelected="True">AGUA</ComboBoxItem>
+            <ComboBoxItem>PLAYA</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="tbFecha" HorizontalAlignment="Left" Height="23" Margin="596,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116"/>
+        <TextBox x:Name="tbPais" HorizontalAlignment="Left" Height="23" Margin="33,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbEstado" HorizontalAlignment="Left" Height="23" Margin="204,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbCiudad" HorizontalAlignment="Left" Height="23" Margin="359,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbLocalidad" HorizontalAlignment="Left" Height="23" Margin="508,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbLatitud" HorizontalAlignment="Left" Height="23" Margin="33,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbLongitud" HorizontalAlignment="Left" Height="23" Margin="204,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbInfAdicional" HorizontalAlignment="Left" Height="23" Margin="397,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
